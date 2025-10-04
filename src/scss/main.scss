@@ -1,5 +1,3 @@
 @import './mixins';
-
-header {
-  @include flex-column-all-center;
-}
+@import './base';
+@import './globals';
