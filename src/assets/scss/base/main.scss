@@ -62,9 +62,6 @@ button {
   background-color: transparent;
   cursor: pointer;
 }
-label {
-  cursor: pointer;
-}
 
 .container {
   margin: 0 auto;
@@ -77,6 +74,4 @@ label {
   opacity: 0;
   visibility: hidden;
 }
-.body {
-  background-color: var(--neutral-color-10);
-}
+
