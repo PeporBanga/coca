@@ -1,5 +1,6 @@
 .header {
   padding: 26px 0 22px;
+  background-color: transparent;
 
   @include mobile {
     padding: 22px 0 18px;
@@ -73,6 +74,7 @@
     background-color: var(--neutral-color-130);
     transform: translateY(8px);
     transition: background-color var(--transition);
+    cursor: pointer;
 
     &::before {
       content: '';
