@@ -4,7 +4,7 @@
 
   @include mobile {
     padding: 22px 0 18px;
-    }
+  }
 
   &__container {
     @include flex-all-between;
@@ -14,12 +14,10 @@
     position: relative;
     z-index: var(--z-index-4);
 
-   
-
     & svg {
-         @include mobile {
-    max-width: 130px;
-    }
+      @include mobile {
+        max-width: 130px;
+      }
 
       & path {
         &:not(:last-child) {
@@ -66,7 +64,7 @@
     }
   }
 
-   &__switcher {
+  &__switcher {
     position: relative;
     border-radius: 13px;
     width: 63px;
@@ -137,7 +135,7 @@
     }
   }
 
- &__link {
+  &__link {
     position: relative;
     font-weight: 500;
     line-height: 162%;
