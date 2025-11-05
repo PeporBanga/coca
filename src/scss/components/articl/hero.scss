@@ -1,0 +1,170 @@
+.articl {
+  padding: 80px 0 160px;
+
+  &__container {
+    @include flex-justify-center;
+  }
+
+  &__wrap {
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: column;
+    align-content: center;
+    max-width: 940px;
+  }
+
+  &__title {
+    margin-bottom: 80px;
+    max-width: 968px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    color: var(--neutral-color-100);
+
+    @include tablet {
+      text-align: center;
+    }
+
+    &-subtitle {
+      margin-bottom: 24px;
+      font-weight: 600;
+    }
+  }
+
+  &__head {
+    margin-bottom: 24px;
+
+    &-reader {
+      @include flex-justify-between;
+      align-items: flex-end;
+      font-style: normal;
+
+      @include small-tablet{
+    @include flex-column;
+    align-items: start;
+    }
+
+      &-info {
+        @include flex-align-center;
+        gap: 24px;
+      }
+
+      & img {
+        overflow: hidden;
+        border-radius: 50%;
+      }
+
+      &-name {
+        margin-bottom: 4px;
+        font-weight: 600;
+        line-height: 144%;
+        color: var(--neutral-color-100);
+      }
+
+      &-professions {
+        font-weight: 500;
+        line-height: 162%;
+        color: var(--neutral-color-150);
+      }
+
+      &-data {
+        font-weight: 500;
+        line-height: 150%;
+        color: var(--neutral-color-150);
+
+        @include small-tablet{
+    margin-left: 80px;
+    }
+      }
+    }
+  }
+
+  &__img {
+    margin-bottom: 80px;
+  }
+
+  &__descr {
+    margin-bottom: 56px;
+    font-weight: 400;
+    line-height: 178%;
+    color: var(--neutral-color-100);
+  }
+
+  &__author {
+    display: flex;
+    gap: 48px;
+
+    @include mobile{
+    @include flex-column-all-center;
+    }
+
+    &-info {
+      max-width: 649px;
+    }
+
+    &-img {
+      max-height: 200px;
+    }
+
+    &-socials {
+      @include flex-align-center;
+      gap: 32px;
+      margin-bottom: 14px;
+
+      @include small-tablet {
+        flex-wrap: wrap;
+      }
+
+      &-icon {
+        & svg {
+          & path {
+            fill: var(--neutral-color-90);
+          }
+        }
+      }
+
+      &-title {
+        margin-left: -8px;
+        font-weight: 500;
+        line-height: 162%;
+        color: var(--neutral-color-100);
+
+        @include small-tablet {
+          margin-top: -24px;
+          margin-left: 0;
+        }
+
+        @include mobile{
+    margin-top: 0;
+    }
+      }
+    }
+
+    &-subtitle {
+      margin-bottom: 16px;
+      font-weight: 400;
+      line-height: 150%;
+      color: var(--neutral-color-150);
+    }
+
+    &-name {
+      margin-bottom: 16px;
+      font-weight: 600;
+      line-height: 131%;
+      letter-spacing: -0.03em;
+      color: var(--neutral-color-100);
+    }
+
+    &-professions {
+      margin-bottom: 16px;
+      font-weight: 500;
+      line-height: 162%;
+      color: var(--neutral-color-150);
+    }
+
+    &-descr {
+      font-weight: 400;
+      line-height: 178%;
+      color: var(--neutral-color-100);
+    }
+  }
+}

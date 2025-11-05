@@ -1,0 +1,154 @@
+.hero {
+  padding: 105px 0 160px;
+
+  @include mobile {
+    padding: 70px 0 120px;
+  }
+
+  &::before {
+    top: 75%;
+  }
+
+  &::after {
+    top: 122%;
+  }
+
+  &__top {
+    @include flex-justify-between;
+    align-items: flex-end;
+    margin-bottom: 135px;
+
+    @include small-tablet {
+      @include flex-all-center;
+      margin-bottom: 100px;
+      text-align: center;
+    }
+
+    @include mobile {
+      margin-bottom: 80px;
+    }
+  }
+
+  &__text {
+    &-title {
+      margin-bottom: 118px;
+      max-width: 955px;
+      font-weight: 700;
+      letter-spacing: -0.04em;
+      color: var(--neutral-color-100);
+
+      @include tablet {
+        margin-bottom: 90px;
+      }
+
+      @include mobile {
+        margin-bottom: 70px;
+      }
+    }
+
+    &-subtitle {
+      & br {
+        @include small-tablet {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__btn {
+    padding-bottom: 27px;
+
+    @include small-tablet {
+      display: none;
+    }
+
+    & svg {
+      & rect {
+        fill: var(--neutral-color-90);
+      }
+
+      & path {
+        fill: var(--neutral-color-90);
+      }
+
+      & circle {
+        fill: var(--neutral-color-90);
+      }
+    }
+  }
+
+  &__slider {
+    position: relative;
+
+    &-btns {
+      @include flex-all-center;
+      position: absolute;
+      top: 126px;
+      left: 53%;
+      z-index: var(--z-index-2);
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      background-color: #fff;
+
+      @include mini-desktop {
+        left: 46%;
+        width: 80px;
+        height: 80px;
+      }
+
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+
+  &__article {
+    max-width: 502px;
+
+    @include mini-desktop {
+      max-width: 482px;
+    }
+
+    @include tablet {
+      max-width: 400px;
+    }
+
+    @include small-tablet {
+      max-width: 360px;
+    }
+
+    &-title {
+      margin-bottom: 8px;
+      font-weight: 600;
+      line-height: 150%;
+      letter-spacing: -0.01em;
+      color: var(--neutral-color-100);
+    }
+
+    &-descr {
+      margin-bottom: 32px;
+      font-weight: 500;
+      line-height: 178%;
+      color: var(--neutral-color-150);
+
+      @include tablet {
+        margin-bottom: 8px;
+        line-height: 123%;
+      }
+    }
+
+    &-button {
+      border-radius: 100px;
+      padding: 16px 32px;
+      background-color: var(--neutral-color-100);
+    }
+
+    &-link {
+      font-weight: 700;
+      line-height: 150%;
+      text-align: center;
+      color: var(--neutral-color-10);
+    }
+  }
+}
